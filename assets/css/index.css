@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
 
 :root {
-    --main-white-color: #f2f2f2;
+    --main-white-color: #ffffff;
     --main-black-color: black;
     --main-purple-color: #9e89b8;
 }
@@ -87,11 +87,10 @@ body {
     justify-content: center;
     flex-grow: 1;
     min-height: 350px;
+    /*use ../images/board.jpg for background*/
+
     background: var(--main-purple-color)
-    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat
-    center / cover;
-    background-blend-mode: luminosity;
-    color: var(--main-white-color);
+    url('../images/board.jpg') no-repeat center center;
 }
 
 .page-main div {
