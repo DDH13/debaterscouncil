@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
 
+
 :root {
     --main-white-color: #ffffff;
     --main-black-color: black;
@@ -12,34 +13,21 @@
     box-sizing: border-box;
 }
 
-/* MAIN
+/* CONTAINER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-main {
+.wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    min-height: 350px;
-    /*use ../images/board.jpg for background*/
-
-    background: var(--main-purple-color)
-    url('../images/board.jpg') no-repeat center center;
+    min-height: 100vh;
 }
 
-.page-main div {
-    max-width: 500px;
+.wrapper > * {
+    padding: 20px;
 }
 
-.page-main h1 {
-    margin-bottom: 20px;
+body {
+    font: 16px/1.5 "Dosis", sans-serif;
 }
-
-.page-main p + p {
-    margin-top: 10px;
-}
-
-
-
 
 /* MQ
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
