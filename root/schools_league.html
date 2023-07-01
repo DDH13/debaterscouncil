@@ -21,16 +21,10 @@
     <script src="../assets/js/schools_league.js"></script>
 </head>
 <body>
-</body>
-</html>
+
 <div class="wrapper">
     <header class="page-header"></header>
     <main>
-        <div id="league-table" class="p-5 m-5 row">
-            <div class="w-100 mb-5"><h1>League Table</h1></div>
-            <div id="table-container" class="table-responsive">
-            </div>
-        </div>
         <div id="intro" class="p-5 m-5">
             <h1>About DC Schools League</h1>
             <br>
@@ -120,10 +114,17 @@
                 </a>
             </div>
         </div>
+        <div id="league-table" class="p-5 m-5 row">
+            <div class="w-100 mb-3" id="league-table-title"><h1>League Table</h1></div>
+            <div id="table-container" class="table-responsive">
+            </div>
+        </div>
+
     </main>
     <footer class="page-footer"></footer>
 </div>
-
+</body>
+</html>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadHeader();

@@ -12,7 +12,7 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 #intro,#winners,#league-table{
-    background: #FFB20F;
+    background: white;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
@@ -21,7 +21,28 @@
 }
 table{
     text-align: center;
+    height: inherit;
 }
-body{
-    background-color: #000000;
+td,th{
+    border: 1px solid white;
+    min-width: 150px;
+    padding: 8px !important;
+}
+td{
+    font-size: 15px;
+}
+
+th{
+    color:white;
+    background-color: black;
+}
+main{
+    padding:0;
+}
+
+#league-table td:nth-child(2){
+    min-width: 311px;
+}
+#league-table td:nth-child(1){
+    width: 30px;
 }

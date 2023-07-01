@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create the HTML table element
             var table = document.createElement("table");
-            table.classList.add("table", "table-striped", "table-hover", "table-bordered", "table-sm");
+            table.classList.add("table", "table-striped", "table-hover");
             //Check no.of tournaments
             // const noOfTournaments = rows[0].split("\t").filter(function (el) { return el; }).length - 3;
             // console.log(`No.of tournaments ${noOfTournaments}`);
@@ -77,14 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
             //highlight top 4 ranking teams
             for (let i = 1; i < table.rows.length; i++) {
                 if (table.rows[i].cells[0].textContent < 5) {
-                    table.rows[i].classList.add("table-success");
-                }
-                else{
-                    table.rows[i].classList.add("table-light");
+                    table.rows[i].classList.add("font-weight-bold");
                 }
             }
-            //change header bg color
-            table.rows[0].classList.add("table-primary");
         })
         .catch(error => {
             console.error("Error:", error);
