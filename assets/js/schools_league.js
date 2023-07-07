@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create the HTML table element
             var table = document.createElement("table");
-            table.classList.add("table", "table-striped", "table-hover", "table-bordered", "table-sm");
+            table.classList.add("table", "table-striped", "table-hover");
             //Check no.of tournaments
             // const noOfTournaments = rows[0].split("\t").filter(function (el) { return el; }).length - 3;
             // console.log(`No.of tournaments ${noOfTournaments}`);
@@ -77,17 +77,60 @@ document.addEventListener("DOMContentLoaded", function () {
             //highlight top 4 ranking teams
             for (let i = 1; i < table.rows.length; i++) {
                 if (table.rows[i].cells[0].textContent < 5) {
-                    table.rows[i].classList.add("table-success");
-                }
-                else{
-                    table.rows[i].classList.add("table-light");
+                    table.rows[i].classList.add("font-weight-bold");
                 }
             }
-            //change header bg color
-            table.rows[0].classList.add("table-primary");
         })
         .catch(error => {
             console.error("Error:", error);
         });
+
+
+    const slider = document.querySelector(".items");
+    const slides = document.querySelectorAll(".item");
+    const button = document.querySelectorAll(".button");
+    const picname = document.querySelector('#school-year');
+
+    let numberOfImages = slides.length;
+    let current = 0;
+    let prev = numberOfImages - 1;
+    let next = 1;
+
+    for (let i = 0; i < button.length; i++) {
+        button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+    }
+
+    const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+    const gotoNext = () => current < numberOfImages-1 ? gotoNum(current + 1) : gotoNum(0);
+
+    const gotoNum = number => {
+        current = number;
+        prev = current - 1;
+        next = current + 1;
+        //change picname innerHTML to alt of current slide
+        picname.innerHTML = slides[current].querySelector('img').alt;
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+            slides[i].classList.remove("prev");
+            slides[i].classList.remove("next");
+        }
+
+        if (next == numberOfImages) {
+            next = 0;
+        }
+
+        if (prev == -1) {
+            prev = numberOfImages - 1;
+        }
+
+        slides[current].classList.add("active");
+        slides[prev].classList.add("prev");
+        slides[next].classList.add("next");
+    }
+
+    //every 5 seconds, go to next slide
+    setInterval(gotoNext, 5000);
 
 });

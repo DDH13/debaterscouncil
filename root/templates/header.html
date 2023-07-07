@@ -1,6 +1,6 @@
 <nav>
     <h2 class="logo">
-        <a href="index.html"> <img id="main-logo" src="../../assets/images/Main logo.svg" alt="logo" class="w-25"> </a>
+        <a href="index.html"> <img id="main-logo" src="../../assets/images/Main logo.svg" alt="logo"> </a>
     </h2>
     <ul>
         <li>
@@ -27,6 +27,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .page-header {
         background: var(--main-white-color);
+        position:sticky;
+        top:0;
+        z-index: 2;
+        border-bottom: 2px solid black;
+        padding-top: 10px;
+        padding-bottom: 0;
     }
 
     .page-header nav {
@@ -66,5 +72,8 @@
     .page-header a{
         text-decoration: none;
         color: inherit;
+    }
+    #main-logo{
+        width:100px;
     }
 </style>
