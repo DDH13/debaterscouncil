@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector(".items");
     const slides = document.querySelectorAll(".item");
     const button = document.querySelectorAll(".button");
+    const picname = document.querySelector('#school-year');
 
     let numberOfImages = slides.length;
     let current = 0;
@@ -107,6 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
         current = number;
         prev = current - 1;
         next = current + 1;
+        //change picname innerHTML to alt of current slide
+        picname.innerHTML = slides[current].querySelector('img').alt;
 
         for (let i = 0; i < slides.length; i++) {
             slides[i].classList.remove("active");
@@ -126,5 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[prev].classList.add("prev");
         slides[next].classList.add("next");
     }
+
+    //every 5 seconds, go to next slide
+    setInterval(gotoNext, 5000);
 
 });
