@@ -28,8 +28,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .page-header {
         background: var(--main-white-color);
-        position:sticky;
-        top:0;
+        position: sticky;
+        top: 0;
         z-index: 2;
         border-bottom: 2px solid black;
         padding-top: 10px;
@@ -47,7 +47,7 @@
         display: flex;
         order: 1;
         /*width: 100%;*/
-        list-style:none;
+        list-style: none;
         margin-top: 15px;
     }
 
@@ -70,11 +70,31 @@
     }
 
 
-    .page-header a{
+    .page-header a {
         text-decoration: none;
         color: inherit;
     }
-    #main-logo{
-        width:100px;
+
+    #main-logo {
+        width: 100px;
     }
 </style>
+<script>
+    // document.addEventListener('DOMContentLoaded', () => {
+    function attachScroll() {
+        const contactButton = document.querySelector(".cta-contact");
+        contactButton.addEventListener("click", function () {
+            window.scrollTo(0, document.body.scrollHeight);
+            const icons = document.querySelectorAll(".page-footer i");
+// Scroll to the footer
+            document.querySelector(".page-footer").scrollIntoView({behavior: "smooth"});
+
+// Add the "scale-effect" class to the icons to make them scale up temporarily
+            icons.forEach(icon => {
+                icon.classList.add("scale-effect");
+// Remove the "scale-effect" class after a short delay (e.g., 4 seconds for both scale up and down)
+                setTimeout(() => icon.classList.remove("scale-effect"), 4000);
+            });
+        });
+    }
+</script>
