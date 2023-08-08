@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    background: #310404 url(../../assets/images/main_background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,7 +43,6 @@ h1.main, p.demos {
 }
 .sp-content {
     /*border: 5px solid white;*/
-
     /*position: absolute;*/
     width: 100%;
     height: 100vh;
@@ -52,6 +51,15 @@ h1.main, p.demos {
     z-index: 1000;
     /*margin-bottom: 40px;*/
 }
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .sp-content {
+        /* Height for mobile screens */
+        height: 50vh;
+    }
+}
+
+
 .sp-container h2 {
     /*border: 5px solid white;*/
     /*position: absolute;*/
