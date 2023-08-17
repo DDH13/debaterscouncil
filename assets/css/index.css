@@ -20,12 +20,7 @@ body {
 a {
     text-decoration: none;
 }
-h1.main, p.demos {
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -ms-animation-delay: 18s;
-    animation-delay: 18s;
-}
+
 .sp-container {
     /*border: 5px solid white;*/
 
@@ -44,7 +39,6 @@ h1.main, p.demos {
 .sp-content {
     /*border: 5px solid white;*/
     /*position: absolute;*/
-    width: 100%;
     height: 100vh;
     left: 0px;
     top: 0px;
@@ -62,7 +56,7 @@ h1.main, p.demos {
 
 .sp-container h2 {
     /*border: 5px solid white;*/
-    /*position: absolute;*/
+    position: absolute;
     top: 50%;
     line-height: 100px;
     height: 90px;
@@ -76,31 +70,13 @@ h1.main, p.demos {
     -ms-animation: blurFadeInOut 3s ease-in backwards;
     animation: blurFadeInOut 3s ease-in backwards;
 }
-.sp-container h2.frame-1 {
+.sp-container h2.frame-5 {
     -webkit-animation-delay: 0s;
     -moz-animation-delay: 0s;
     -ms-animation-delay: 0s;
     animation-delay: 0s;
 }
-.sp-container h2.frame-2 {
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -ms-animation-delay: 3s;
-    animation-delay: 3s;
-}
-.sp-container h2.frame-3 {
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s;
-}
-.sp-container h2.frame-4 {
-    font-size: 200px;
-    -webkit-animation-delay: 9s;
-    -moz-animation-delay: 9s;
-    -ms-animation-delay: 9s;
-    animation-delay: 9s;
-}
+
 .sp-container h2.frame-5 {
     -webkit-animation: none;
     -moz-animation: none;
@@ -110,72 +86,24 @@ h1.main, p.demos {
     text-shadow: 0px 0px 1px #fff;
 }
 .sp-container h2.frame-5 span {
-    -webkit-animation: blurFadeIn 3s ease-in 12s backwards;
-    -moz-animation: blurFadeIn 1s ease-in 12s backwards;
-    -ms-animation: blurFadeIn 3s ease-in 12s backwards;
-    animation: blurFadeIn 3s ease-in 12s backwards;
+    -webkit-animation: blurFadeIn 3s ease-in 2s backwards;
+    -moz-animation: blurFadeIn 3s ease-in 2s backwards;
+    -ms-animation: blurFadeIn 3s ease-in 2s backwards;
+    animation: blurFadeIn 3s ease-in 2s backwards;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
 .sp-container h2.frame-5 span:nth-child(2) {
-    -webkit-animation-delay: 13s;
-    -moz-animation-delay: 13s;
-    -ms-animation-delay: 13s;
-    animation-delay: 13s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
 }
 .sp-container h2.frame-5 span:nth-child(3) {
-    -webkit-animation-delay: 14s;
-    -moz-animation-delay: 14s;
-    -ms-animation-delay: 14s;
-    animation-delay: 14s;
-}
-.sp-globe {
-    /*border: 5px solid white;*/
-
-    /*position: absolute;*/
-    width: 282px;
-    height: 273px;
-    left: 50%;
-    top: 50%;
-    margin: -137px 0 0 -141px;
-    -webkit-animation: fadeInBack 3.6s linear 14s backwards;
-    -moz-animation: fadeInBack 3.6s linear 14s backwards;
-    -ms-animation: fadeInBack 3.6s linear 14s backwards;
-    animation: fadeInBack 3.6s linear 14s backwards;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    filter: alpha(opacity=30);
-    opacity: 0.3;
-    -webkit-transform: scale(5);
-    -moz-transform: scale(5);
-    -o-transform: scale(5);
-    -ms-transform: scale(5);
-    transform: scale(5);
-}
-.sp-circle-link {
-    /*border: 5px solid white;*/
-    position: absolute;
-    left: 50%;
-    top: 160px;
-    margin-left: -50px;
-    text-align: center;
-    line-height: 100px;
-    width: 150px;
-    height: 150px;
-    background: #fff;
-    color: #3f1616;
-    font-size: 25px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-animation: fadeInRotate 1s linear 16s backwards;
-    -moz-animation: fadeInRotate 1s linear 16s backwards;
-    -ms-animation: fadeInRotate 1s linear 16s backwards;
-    animation: fadeInRotate 1s linear 16s backwards;
-    -webkit-transform: scale(1) rotate(0deg);
-    -moz-transform: scale(1) rotate(0deg);
-    -o-transform: scale(1) rotate(0deg);
-    -ms-transform: scale(1) rotate(0deg);
-    transform: scale(1) rotate(0deg);
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
 }
 
 @-webkit-keyframes blurFadeInOut {
