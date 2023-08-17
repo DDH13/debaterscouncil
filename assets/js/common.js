@@ -30,6 +30,13 @@ const loadHeaderFooter = () => {
                 });
         })
         .then(() => {
+            console.log("Header and footer loaded");
+            //get current page
+            let id = window.location.pathname.split("/").pop().split(".")[0] + "-link";
+            let currentpage = document.getElementById(id)
+            currentpage.style.color = "rgba(255,0,0,0.78)";
+            currentpage.style.fontWeight = "bold";
+
             attachScroll();
         })
 }
