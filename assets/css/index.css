@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow');
-.page-footer{
+
+.page-footer {
     width: 100%;
 }
 
@@ -11,12 +12,14 @@ body {
     background-size: cover;
     font-family: 'Barlow', sans-serif;
 }
+
 .container {
     /*border: 5px solid white;*/
     width: 100%;
     position: relative;
     overflow: hidden;
 }
+
 a {
     text-decoration: none;
 }
@@ -36,15 +39,7 @@ a {
     background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
     margin-bottom: 40px;
 }
-.sp-content {
-    /*border: 5px solid white;*/
-    /*position: absolute;*/
-    height: 100vh;
-    left: 0px;
-    top: 0px;
-    z-index: 1000;
-    /*margin-bottom: 40px;*/
-}
+
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .sp-content {
@@ -53,10 +48,24 @@ a {
     }
 }
 
+.fa-chevron-down {
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    left: 50%;
+}
+
+.cd1 {
+    bottom: 0px;
+    opacity: 0; /* Initial opacity */
+    transform: translateY(20px); /* Initial position */
+    animation: blurFadeIn 1s ease-in-out 6s forwards; /* Delayed animation, adjust timing as needed */
+}
 
 .sp-container h2 {
     /*border: 5px solid white;*/
     position: absolute;
+    left: 0px;
     top: 50%;
     line-height: 100px;
     height: 90px;
@@ -70,6 +79,7 @@ a {
     -ms-animation: blurFadeInOut 3s ease-in backwards;
     animation: blurFadeInOut 3s ease-in backwards;
 }
+
 .sp-container h2.frame-5 {
     -webkit-animation-delay: 0s;
     -moz-animation-delay: 0s;
@@ -85,6 +95,7 @@ a {
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
+
 .sp-container h2.frame-5 span {
     -webkit-animation: blurFadeIn 3s ease-in 2s backwards;
     -moz-animation: blurFadeIn 3s ease-in 2s backwards;
@@ -93,12 +104,23 @@ a {
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
-.sp-container h2.frame-5 span:nth-child(2) {
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -ms-animation-delay: 3s;
-    animation-delay: 3s;
+
+.sp-container h2.frame-5 span:nth-child(1) {
+    -webkit-animation: blurFadeIn 3s ease-in backwards;
+    -moz-animation: blurFadeIn 3s ease-in backwards;
+    -ms-animation: blurFadeIn 3s ease-in backwards;
+    animation: blurFadeIn 3s ease-in backwards;
+    color: transparent;
+    text-shadow: 0px 0px 1px #fff;
 }
+
+.sp-container h2.frame-5 span:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
 .sp-container h2.frame-5 span:nth-child(3) {
     -webkit-animation-delay: 4s;
     -moz-animation-delay: 4s;
@@ -123,6 +145,7 @@ a {
         -webkit-transform: scale(0);
     }
 }
+
 @-webkit-keyframes blurFadeIn {
     0% {
         opacity: 0;
@@ -140,6 +163,7 @@ a {
         -webkit-transform: scale(1);
     }
 }
+
 @-webkit-keyframes fadeInBack {
     0% {
         opacity: 0;
@@ -154,6 +178,7 @@ a {
         -webkit-transform: scale(5);
     }
 }
+
 @-webkit-keyframes fadeInRotate {
     0% {
         opacity: 0;
@@ -164,6 +189,7 @@ a {
         -webkit-transform: scale(1) rotate(0deg);
     }
 }
+
 /**/
 
 @-moz-keyframes blurFadeInOut {
@@ -183,6 +209,7 @@ a {
         -moz-transform: scale(0);
     }
 }
+
 @-moz-keyframes blurFadeIn {
     0% {
         opacity: 0;
@@ -195,6 +222,7 @@ a {
         -moz-transform: scale(1);
     }
 }
+
 @-moz-keyframes fadeInBack {
     0% {
         opacity: 0;
@@ -209,6 +237,7 @@ a {
         -moz-transform: scale(5);
     }
 }
+
 @-moz-keyframes fadeInRotate {
     0% {
         opacity: 0;
@@ -219,6 +248,7 @@ a {
         -moz-transform: scale(1) rotate(0deg);
     }
 }
+
 /**/
 
 @keyframes blurFadeInOut {
@@ -238,6 +268,7 @@ a {
         transform: scale(0);
     }
 }
+
 @keyframes blurFadeIn {
     0% {
         opacity: 0;
@@ -255,6 +286,7 @@ a {
         transform: scale(1);
     }
 }
+
 @keyframes fadeInBack {
     0% {
         opacity: 0;
@@ -269,6 +301,7 @@ a {
         transform: scale(5);
     }
 }
+
 @keyframes fadeInRotate {
     0% {
         opacity: 0;
