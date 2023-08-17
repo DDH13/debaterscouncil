@@ -59,7 +59,7 @@ a {
     bottom: 0px;
     opacity: 0; /* Initial opacity */
     transform: translateY(20px); /* Initial position */
-    animation: blurFadeIn 1s ease-in-out 6s forwards; /* Delayed animation, adjust timing as needed */
+    animation: blurFadeIn 1s ease-in-out 2.5s forwards; /* Delayed animation, adjust timing as needed */
 }
 
 .componentdiv{
@@ -86,10 +86,10 @@ a {
     width: 100%;
     text-align: center;
     color: transparent;
-    -webkit-animation: blurFadeInOut 3s ease-in backwards;
-    -moz-animation: blurFadeInOut 3s ease-in backwards;
-    -ms-animation: blurFadeInOut 3s ease-in backwards;
-    animation: blurFadeInOut 3s ease-in backwards;
+    -webkit-animation: blurFadeInOut 1s ease-in backwards;
+    -moz-animation: blurFadeInOut 1s ease-in backwards;
+    -ms-animation: blurFadeInOut 1s ease-in backwards;
+    animation: blurFadeInOut 1s ease-in backwards;
 }
 
 .sp-container h2.frame-5 {
@@ -109,35 +109,35 @@ a {
 }
 
 .sp-container h2.frame-5 span {
-    -webkit-animation: blurFadeIn 3s ease-in 2s backwards;
-    -moz-animation: blurFadeIn 3s ease-in 2s backwards;
-    -ms-animation: blurFadeIn 3s ease-in 2s backwards;
-    animation: blurFadeIn 3s ease-in 2s backwards;
+    -webkit-animation: blurFadeIn 1.5s ease-in 1s backwards;
+    -moz-animation: blurFadeIn 1.5s ease-in 1s backwards;
+    -ms-animation: blurFadeIn 1.5s ease-in 1s backwards;
+    animation: blurFadeIn 1.5s ease-in 1s backwards;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
 
 .sp-container h2.frame-5 span:nth-child(1) {
-    -webkit-animation: blurFadeIn 3s ease-in backwards;
-    -moz-animation: blurFadeIn 3s ease-in backwards;
-    -ms-animation: blurFadeIn 3s ease-in backwards;
-    animation: blurFadeIn 3s ease-in backwards;
+    -webkit-animation: blurFadeIn 1.5s ease-in backwards;
+    -moz-animation: blurFadeIn 1.5s ease-in backwards;
+    -ms-animation: blurFadeIn 1.5s ease-in backwards;
+    animation: blurFadeIn 1.5s ease-in backwards;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
 
 .sp-container h2.frame-5 span:nth-child(2) {
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -ms-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .sp-container h2.frame-5 span:nth-child(3) {
-    -webkit-animation-delay: 4s;
-    -moz-animation-delay: 4s;
-    -ms-animation-delay: 4s;
-    animation-delay: 4s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 @-webkit-keyframes blurFadeInOut {
