@@ -1,6 +1,6 @@
 .items {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     user-select: none;
@@ -91,16 +91,12 @@
     /*center text*/
     text-align: center;
     position:absolute;
-    bottom:60px;
+    bottom:20px;
 }
 
 #intro, #winners, #league-table {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    border: 1px solid rgba(189, 163, 163, 0.85);
+
 }
 
 table {
