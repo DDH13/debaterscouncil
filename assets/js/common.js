@@ -30,7 +30,6 @@ const loadHeaderFooter = () => {
                 });
         })
         .then(() => {
-            console.log("Header and footer loaded");
             //get current page
             let id = window.location.pathname.split("/").pop().split(".")[0] + "-link";
             let currentpage = document.getElementById(id)

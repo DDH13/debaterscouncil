@@ -5,13 +5,13 @@ main {
 
 /*timeline*/
 
-#teams img{
+#teams img {
     width: 600px;
     height: auto;
     border-radius: 15px;
     /*border:  5px solid #b2a2a2;*/
     /*shadow*/
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
     margin-bottom: 15px;
 }
 
@@ -28,9 +28,11 @@ main {
     margin: 1.9rem 0 0 0;
     float: right;
 }
+
 #teams strong {
     font-weight: 600;
 }
+
 #teams h1 {
     font-family: 'Saira', sans-serif;
     letter-spacing: 1.5px;
@@ -38,10 +40,12 @@ main {
     font-weight: 400;
     font-size: 2.4em;
 }
+
 #timeline-content {
     margin-top: 50px;
     text-align: center;
 }
+
 /* Timeline */
 .timeline {
     border-left: 4px solid rgba(255, 0, 0, 0.78);
@@ -61,12 +65,14 @@ main {
     font-weight: 100;
     max-width: 75%;
 }
+
 .timeline h1 {
     font-family: 'Saira', sans-serif;
     letter-spacing: 1.5px;
     font-weight: 100;
     font-size: 1.4em;
 }
+
 .timeline h2,
 .timeline h3 {
     font-family: 'Saira', sans-serif;
@@ -74,23 +80,27 @@ main {
     font-weight: 400;
     font-size: 1.4em;
 }
+
 .timeline .event {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
     padding-bottom: 25px;
     margin-bottom: 50px;
     position: relative;
 }
+
 .timeline .event:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
 }
+
 .timeline .event:before,
 .timeline .event:after {
     position: absolute;
     display: block;
     top: 0;
 }
+
 .timeline .event:before {
     left: -217.5px;
     color: rgb(0, 0, 0);
@@ -101,6 +111,7 @@ main {
     min-width: 120px;
     font-family: 'Saira', sans-serif;
 }
+
 .timeline .event:after {
     box-shadow: 0 0 0 4px #05132f;
     left: -57.85px;
@@ -110,5 +121,26 @@ main {
     width: 11px;
     content: "";
     top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #intro{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    #teams{
+        padding: 0 !important;
+        margin-right: 0px !important;
+    }
+    #teams h1{
+        margin-left: -45px;
+    }
+    .timeline img{
+        width: 200px !important;
+        height: auto;
+    }
+    li {
+        font-size: 10px !important;
+    }
 }
 
