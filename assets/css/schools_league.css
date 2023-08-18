@@ -52,6 +52,12 @@
     width: 100vh;
     z-index: 100;
 }
+@media (max-width: 768px) {
+    /* Apply styles for mobile devices */
+    .items .button-container {
+        width: 50vh;
+    }
+}
 
 .button-container .button {
     color: #e30808;

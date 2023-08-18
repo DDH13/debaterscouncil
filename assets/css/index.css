@@ -17,7 +17,6 @@ body {
     /*border: 5px solid white;*/
     width: 100%;
     position: relative;
-    overflow: hidden;
 }
 
 a {
@@ -40,12 +39,8 @@ a {
     margin-bottom: 40px;
 }
 
-/* Media query for mobile screens */
-@media screen and (max-width: 768px) {
-    .sp-content {
-        /* Height for mobile screens */
-        height: 50vh;
-    }
+.page-main{
+    scroll-snap-type: y mandatory;
 }
 
 .fa-chevron-down {
@@ -73,9 +68,11 @@ a {
 .mincompdiv{
     /*border: 5px solid green;*/
 }
+#who-are-we, #what-do-we-do{
+    scroll-snap-align: start;
+}
 
 .sp-container h2 {
-    /*border: 5px solid white;*/
     position: absolute;
     left: 0px;
     top: 50%;
@@ -90,6 +87,25 @@ a {
     -moz-animation: blurFadeInOut 1s ease-in backwards;
     -ms-animation: blurFadeInOut 1s ease-in backwards;
     animation: blurFadeInOut 1s ease-in backwards;
+}
+
+@media screen and (max-width: 768px) {
+    .sp-container h2 {
+        font-size: 60px;
+        line-height: 60px;
+        height: 60px;
+        margin-top: -30px;
+        top : 40%;
+    }
+    .sp-content{
+        height: 50vh;
+    }
+    .cd1{
+        bottom: 80px;
+    }
+    .mobile-none{
+        display: none;
+    }
 }
 
 .sp-container h2.frame-5 {

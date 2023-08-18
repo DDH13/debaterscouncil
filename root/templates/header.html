@@ -20,7 +20,7 @@
         </li>
     </ul>
     <br>
-    <button class="cta-contact d-inline-block">Get in touch</button>
+    <button class="cta-contact">Get in touch</button>
 </nav>
 
 <style>
@@ -61,6 +61,7 @@
         padding: 5px 18px;
         border: 1px solid;
         border-radius: 5px;
+        display: inline-block;
     }
 
     .page-header button {
@@ -77,6 +78,41 @@
 
     #main-logo {
         width: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .page-header {
+            padding-top: 0;
+        }
+        .cta-contact{
+            display: none;
+        }
+
+        .page-header nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .cta-contact{
+            display: none !important;
+        }
+
+        .page-header ul {
+            order: 2;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0;
+            font-size: 0.7rem;
+        }
+
+        .page-header ul li:not(:last-child) {
+            padding-right: 0;
+        }
+        #main-logo {
+            display: none;
+        }
+        nav{
+            height: 40px;
+        }
     }
 </style>
 <script>
