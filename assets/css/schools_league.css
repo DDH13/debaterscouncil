@@ -57,6 +57,11 @@
     .items .button-container {
         width: 50vh;
     }
+
+    #intro, #winners, #league-table {
+        padding:0 !important;
+        margin : 0 !important;
+    }
 }
 
 .button-container .button {
