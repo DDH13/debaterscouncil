@@ -62,6 +62,18 @@
         padding:0 !important;
         margin : 0 !important;
     }
+    .web-view{
+        display: none;
+    }
+    .rank{
+        width: 10px !important;
+    }
+    td {
+        min-width: 10px !important;
+    }
+    th {
+        min-width: 10px !important;
+    }
 }
 
 .button-container .button {

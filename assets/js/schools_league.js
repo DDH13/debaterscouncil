@@ -7,20 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text())
         .then(tsvData => {
             // Split the TSV data into rows
-            var rows = tsvData.split("\n");
+            const rows = tsvData.split("\n");
             //remove 2nd row
             rows.splice(1, 1);
 
             // Create the HTML table element
-            var table = document.createElement("table");
+            const table = document.createElement("table");
             table.classList.add("table", "table-striped", "table-hover");
-            //Check no.of tournaments
-            // const noOfTournaments = rows[0].split("\t").filter(function (el) { return el; }).length - 3;
-            // console.log(`No.of tournaments ${noOfTournaments}`);
-            // console.log(rows[0].split("\t").filter(function (el) { return el; }));
 
             // Create the HTML table header row using the first row of the TSV file
-            var headerCells = rows[0].split("\t");
+            const headerCells = rows[0].split("\t");
             //remove 1 before last cell
             headerCells.splice(headerCells.length - 2, 1);
             //remove first row
@@ -39,11 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
             table.appendChild(tbody);
 
 
-
             // Iterate over each row
             rows.forEach(function (rowData) {
                 // Split the row data into cells and remove '\r' from last cell
-                var cells = rowData.split("\t");
+                const cells = rowData.split("\t");
                 cells[cells.length - 1] = cells[cells.length - 1].replace("\r", "");
 
                 //remove 1 before last cell
@@ -80,6 +75,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     table.rows[i].classList.add("font-weight-bold");
                 }
             }
+
+            for (let i = 0; i < table.rows.length; i++) {
+                //add a class called web-view to each cell in all columns except the first two
+                for (let j = 2; j < table.rows[i].cells.length; j++) {
+                    table.rows[i].cells[j].classList.add("web-view");
+                }
+                //add a class called rank to the first cell in each row
+                table.rows[i].cells[0].classList.add("rank");
+            }
         })
         .catch(error => {
             console.error("Error:", error);
@@ -102,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-    const gotoNext = () => current < numberOfImages-1 ? gotoNum(current + 1) : gotoNum(0);
+    const gotoNext = () => current < numberOfImages - 1 ? gotoNum(current + 1) : gotoNum(0);
 
     const gotoNum = number => {
         current = number;
