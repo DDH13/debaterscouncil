@@ -136,11 +136,21 @@ main {
         margin-left: -45px;
     }
     .timeline img{
-        width: 200px !important;
+        margin-left: -15px;
+        width: 240px !important;
         height: auto;
     }
     li {
         font-size: 10px !important;
+    }
+    li p{
+        width: 210px;
+    }
+    #timeline-content{
+        margin-left: -45px;
+    }
+    .timeline .event:before{
+        left: -200px;
     }
 }
 
