@@ -32,6 +32,7 @@ const loadHeaderFooter = () => {
         .then(() => {
             //get current page
             let id = window.location.pathname.split("/").pop().split(".")[0] + "-link";
+            if (id =="-link") id = "index-link";
             let currentpage = document.getElementById(id)
             currentpage.style.color = "rgba(255,0,0,0.78)";
             currentpage.style.fontWeight = "bold";
