@@ -78,11 +78,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
             for (let i = 0; i < table.rows.length; i++) {
                 //add a class called web-view to each cell in all columns except the first two
-                for (let j = 2; j < table.rows[i].cells.length; j++) {
+                for (let j = 2; j < table.rows[i].cells.length-1; j++) {
                     table.rows[i].cells[j].classList.add("web-view");
                 }
                 //add a class called rank to the first cell in each row
                 table.rows[i].cells[0].classList.add("rank");
+                //add a class called school to the second cell in each row
+                table.rows[i].cells[1].classList.add("school");
+                //add a class called total to the last cell in each row
+                table.rows[i].cells[table.rows[i].cells.length - 1].classList.add("total");
             }
         })
         .catch(error => {

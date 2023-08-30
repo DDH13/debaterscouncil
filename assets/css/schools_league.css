@@ -74,6 +74,9 @@
     th {
         min-width: 10px !important;
     }
+    #winners{
+        overflow: hidden;
+    }
 }
 
 .button-container .button {
