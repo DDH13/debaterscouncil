@@ -79,14 +79,26 @@ input:checked ~ .tab-content {
     padding: 1em;
 }
 
-.pdf-list img{
-    height: 30px;
-    width: 30px;
-}
-.pdf-list li{
-    padding: 5px;
 
+.pdf-item{
+    background-color: #1a252f;
+    border-radius: 10px;
+    margin: 10px;
+    color:white;
+    /*padding: 10px;*/
+    width:250px;
+    border: 1px solid #ccc;
 }
-.pdf-list{
-    list-style-type: none;
+.pdf-text{
+    padding: 10px;
+}
+.pdf-icon-parent img{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pdf-icon{
+
 }
