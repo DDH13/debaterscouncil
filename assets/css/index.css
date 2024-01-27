@@ -90,6 +90,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    .toast{
+        right: 0% !important;
+    }
     .sp-container h2 {
         font-size: 60px;
         line-height: 60px;
@@ -343,3 +346,44 @@ a {
         transform: scale(1) rotate(0deg);
     }
 }
+
+.toast {
+    color: red;
+    visibility: visible; /* Hidden by default */
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: white;
+    /*color: white;*/
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 10%;
+    bottom: 30px;
+    font-size: 17px;
+}
+.toast button{
+    border: none;
+    background-color: white;
+}
+
+#my-bell{
+    height: 50px;
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
