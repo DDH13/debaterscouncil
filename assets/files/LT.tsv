@@ -1,37 +1,37 @@
-Rank	School	STC		Total
+Rank	School	STC	AC/VV	DS		Total
 Category		M
-1	Royal College, Colombo	8		8
-2	Hillwood College Kandy	6		6
-3	Ladies' College, Colombo	4		4
-3	St. Thomas' College, Mount Lavinia	4		4
-3	Colombo International School	4		4
-6	Trinity College, Kandy	2		2
-6	Ananda College, Colombo	2		2
-6	Methodist College, Colombo	2		2
-6	Gateway College, Dehiwala	2		2
-10	Bishop's College, Colombo	1		1
-10	Elizabeth Moir School, Colombo	1		1
-10	St Bridget's Convent, Colombo	1		1
-10	Lyceum International School, Wattala	1		1
-14	Anula Vidyalaya, Nugegoda			0
-14	Asian International School			0
-14	D. S. Senanayake College, Colombo			0
-14	De Mazenod College			0
-14	Devi Balika Vidyalaya, Colombo			0
-14	Dharmaraja College Kandy			0
-14	Gateway College, Kandy			0
-14	Good Shepherd Convent Kandy			0
-14	Highlands College Maharagama			0
-14	Hindu College, Jaffna			0
-14	Holy Family Convent, Colombo			0
-14	Kandy Girls' High School			0
-14	Kurunegala Maliyadeva Balika Vidyalaya			0
-14	Lyceum International School, Gampaha			0
-14	Lyceum International School, Nugegoda			0
-14	Mahamaya Girls College Kandy			0
-14	Musaeus College, Colombo 7			0
-14	Rahula College, Matara			0
-14	RIC Kurunegala			0
-14	Stafford International School			0
-14	Visakha Vidyalaya, Colombo			0
-14	Wesley College, Colombo			0
+1	Royal College, Colombo	8	8	6		22
+2	Hillwood College Kandy	6	6			12
+2	Ananda College, Colombo	2	2	8		12
+4	St Bridget's Convent, Colombo	1	6	2		9
+4	Elizabeth Moir School, Colombo	1		8		9
+6	Ladies' College, Colombo	4	4			8
+7	Lyceum International School, Wattala	1	2	4		7
+8	Colombo International School	4	2			6
+9	St. Thomas' College, Mount Lavinia	4	1			5
+9	Methodist College, Colombo	2	1	2		5
+11	Gateway College, Dehiwala	2	2			4
+11	D. S. Senanayake College, Colombo			4		4
+13	Trinity College, Kandy	2	1			3
+14	Visakha Vidyalaya, Colombo		2			2
+15	Bishop's College, Colombo	1				1
+15	Musaeus College, Colombo 7		1			1
+17	Anula Vidyalaya, Nugegoda					0
+17	Asian International School					0
+17	De Mazenod College					0
+17	Devi Balika Vidyalaya, Colombo					0
+17	Dharmaraja College Kandy					0
+17	Gateway College, Kandy					0
+17	Good Shepherd Convent Kandy					0
+17	Highlands College Maharagama					0
+17	Hindu College, Jaffna					0
+17	Holy Family Convent, Colombo					0
+17	Kandy Girls' High School					0
+17	Kurunegala Maliyadeva Balika Vidyalaya					0
+17	Lyceum International School, Gampaha					0
+17	Lyceum International School, Nugegoda					0
+17	Mahamaya Girls College Kandy					0
+17	Rahula College, Matara					0
+17	RIC Kurunegala					0
+17	Stafford International School					0
+17	Wesley College, Colombo					0
